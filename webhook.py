@@ -1,5 +1,5 @@
 from flask import Flask, request
-
+from graph_fetch import process_email
 app = Flask(__name__)
 
 @app.route("/listen", methods=["POST", "GET"])
