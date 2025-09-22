@@ -3,3 +3,6 @@ requests
 msal
 python-dotenv
 dateparser
+openai
+azure-ai-formrecognizer
+azure-core
