@@ -174,7 +174,7 @@ except Exception as e:
 
 # Send notification if needed
 if should_notify:
-    print("🚨 Triggering notification based on risk logic.")
+    print("Triggering notification based on risk logic.")
     send_email_notification(access_token, os.getenv("USER_EMAIL"), data)
 else:
-    print("✅ No notification needed — contract looks safe.")
+    print("No notification needed — contract looks safe.")

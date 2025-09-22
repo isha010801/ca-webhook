@@ -10,7 +10,7 @@ def create_subscription():
     }
     payload = {
         "changeType": "created",
-        "notificationUrl": "https://yourdomain.com/listen",  # Replace with your public HTTPS endpoint
+        "notificationUrl": "https://ca-webhook.onrender.com/listen",  # Replace with your public HTTPS endpoint
         "resource": "me/messages",
         "expirationDateTime": "2025-09-25T23:00:00.000Z",
         "clientState": "secret123"

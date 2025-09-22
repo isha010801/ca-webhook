@@ -1,1 +1,4 @@
 flask
+requests
+msal
+python-dotenv

@@ -11,8 +11,11 @@ def listen():
 
     # Handle actual notifications
     data = request.json
-    print("Received notification:", data)
+    for event in data.get("value", []):
+        message_id = event["resourceData"]["id"]
+        process_email(message_id)
     return "", 202
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
